@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <title>Enyoi</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mt-5">
+        <h4>Contenido.</h4>
+
+        <section class="my-2">
+          <h5>Sesion Nº-01</h5>
+          <h6>Objeivos</h6>
+          <ul>
+            <li>Introduccion a
+              <a class="link-style" href="https://es.reactjs.org/" target="_blank" rel="Ampliar-informacion">
+                React
+              </a>
+            </li>
+            <li>Estructura de
+              <a class="link-style" href="https://es.reactjs.org/docs/getting-started.html" target="_blank"
+                rel="Ampliar-informacion">
+                React
+              </a>
+            </li>
+
+          </ul>
+          <div class="accordion" id="accordionToggle">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Introduccion a React
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionToggle">
+                <div class="accordion-body">
+                  <p>
+                    Es una librería open source de JavaScript para desarrollar interfaces de usuario. Fue lanzada en el
+                    año 2013 y desarrollada por Facebook, quienes también la mantienen actualmente junto a una comunidad
+                    de desarrolladores independientes y compañías.
+
+                    Hoy en día muchas empresas de primer nivel utilizan React para el desarrollo de sus aplicaciones, y
+                    es que entre ellas podemos encontrar Facebook, Instagram y el cliente web de WhastApp (todas
+                    propiedad de Facebook), y otras como AirBnb, Uber, Netflix, Twitter, Reddit o Paypal.
+
+                    Desde su lanzamiento, su uso ha ido incrementando notablemente, convirtiéndose, a día de hoy, en una
+                    de las tecnologías front-end más utilizadas.
+                  </p>
+                  <p>Es librería de JavaScript para desarrollar interfaces de usuario. Según a quién le preguntes, puede
+                    que te digan que es la “V” de un framework MCV (Modelo-Vista-Controlador), y es que, al tratarse de
+                    una librería, React necesita ser acompañado de otras librerías para completar las necesidades de
+                    desarrollo de nuestra aplicación web.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  React y su Arquitectura
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionToggle">
+                <div class="accordion-body">
+                  <p>El elemento más importante de React es el componente, que es, en esencia, una pieza de la interfaz
+                    de usuario. Como norma general, al diseñar una aplicación con React, lo que estamos haciendo es
+                    crear componentes independientes y reusables para, poco a poco, crear interfaces de usuario más
+                    complejas.</p>
+                  <p>
+                    Toda aplicación en React tiene al menos un componente; al que normalmente nos referimos como
+                    componente «raíz», que contiene otros componentes “hijos”, y estos a su vez otros, etc. De esta
+                    manera, se puede afirmar que la vista es un árbol de componentes, como se muestra en el siguiente
+                    diagrama de ejemplo:
+                  </p>
+                  <img class="img-fluid  border-2" src="./img/sesion-1/component-map-react.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Componentes y propiedades en React.
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionToggle">
+                <div class="accordion-body">
+                  <p>
+                    Los componentes permiten separar la interfaz de usuario en piezas independientes, reutilizables y
+                    pensar en cada pieza de forma aislada. Esta página proporciona una introducción a la idea de los
+                    componentes.
+                  </p>
+                  <p>
+                    Conceptualmente, los componentes son como las funciones de JavaScript. Aceptan entradas arbitrarias
+                    (llamadas “props”) y retornan elementos de React que describen lo que debe aparecer en la pantalla.
+                  </p>
+                  <h3>Componentes funcionales y de clase</h3>
+                  <p>
+                    La forma más sencilla de definir un componente es escribir una <strong>función</strong> de
+                    JavaScript:
+                  </p>
+                  <img class="img-fluid w-75" src="./img/sesion-1/componentF.png" alt="componente funcional">
+                  <p>
+                    Esta función es un componente de React válido porque acepta un solo argumento de objeto “props” (que
+                    proviene de propiedades) con datos y devuelve un elemento de React. Llamamos a dichos componentes
+                    “funcionales” porque literalmente son funciones JavaScript.
+                  </p>
+                  <p>
+                    También puedes utilizar una <strong>clase</strong> de ES6 para definir un componente:
+                  </p>
+                  <img class="img-fluid w-75" src="./img/sesion-1/class.png" alt="componente de clase">
+                  <p>
+                    Los dos componentes anteriores son equivalentes desde el punto de vista de React.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Renderizando un componente
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionToggle">
+                <div class="accordion-body">
+                  <p>Anteriormente, sólo encontramos elementos de React que representan las etiquetas del DOM:</p>
+                  <img class="img-fluid w-50" src="./img/sesion-1/element-1.png" alt="componente de clase">
+                  <p>Sin embargo, los elementos también pueden representar componentes definidos por el usuario:</p>
+                  <img class="img-fluid w-50" src="./img/sesion-1/element-2.png" alt="componente de clase">
+                  <p>
+                    Cuando React ve un elemento representando un componente definido por el usuario, pasa atributos JSX
+                    e hijos a este componente como un solo objeto. Llamamos a este objeto “props”.
+                  </p>
+                  <p>
+                    Por ejemplo, este código muestra “Hello, Sara” en la página:
+                  </p>
+                  <img class="img-fluid w-75" src="./img/sesion-1/element-3.png" alt="componente de clase">
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Creando nuestra primer aplicacion con React
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionToggle">
+                <div class="accordion-body">
+                  <p>Nosotros trabajaremos con 
+                    <a href="https://vitejs.dev/">Vite</a>
+                    para crear nuestra app-react.
+                  </p>
+                  <ul>
+                    <li>
+                      Crearemos una carpeta donde empezar con nuestro proyecto.
+                    </li>
+                    <li>
+                      Abrimos nuestra consola (powershell, cmd, etc) y ejecutamos el siguiente comando:
+                      <code>npm create vite@latest</code>
+                  <img class="img-fluid w-50 border-5"  src="./img/sesion-1/consola-create.png" alt="componente de clase">
+
+                    </li>
+                    <li>
+                      <p>En nuestra consola nos pedira autorizacion para instalar un conjunto de paquetes
+                        (packets) procedemos a precionar la tecla 'Y', para indicar que aceptamos.
+                      </p>
+                      <img class="img-fluid w-50 border-5"  src="./img/sesion-1/consola-create-option.png" alt="componente de clase">
+                    </li>
+                    <li>
+                      <p>Hara una instalacion rapida y nos pedira un nombre para nuestra app (Proyect name), la llamaremos
+                        <code>miPrimeraApp</code> y precionaremos <strong>Enter</strong>.
+                      </p>
+                      <img class="img-fluid w-50 border-5"  src="./img/sesion-1/consola-create-name.png" alt="componente de clase">
+                    </li>
+                    <li>
+                      Luego nos pedira el nombre del paquete (Pakage name) solo precionaremos <strong>Enter</strong> y en el menu de opciones que se nos despliega bajamos hasta selecionar <code>react</code> y precionamos nuevamente <strong>Enter</strong>
+                      <img class="img-fluid w-50 border-5"  src="./img/sesion-1/consola-create-select.png" alt="componente de clase">
+                    </li>
+                    <li>
+                      <p>Luego nos pedira que seleccionemos entre trabajar con JavaScript o trabajarlo con Typescript, para nuestro caso selecionaremos <code>react</code> puro y presionamos <strong>Enter</strong>. </p>
+                      <img class="img-fluid w-50 border-5"  src="./img/sesion-1/consola-create-type.png" alt="componente de clase">
+                    </li>
+                    <li>
+                      <p> Nos avisara que ha creado el proyecto y nos ofrecera un conjunto de instrucciones a seguir, procedemos a ingresar en consola <code>cd miPrimeraApp</code> y precionamos  <strong>Enter</strong> luego ejecutaremos el siguiente comando <code>npm install</code> 
+                        y precionamos  <strong>Enter</strong> procedemos a esperar que se cree nuestro proyecto</p>
+                      <img class="img-fluid w-50 border-5"  src="./img/sesion-1/consola-create-instrucciones.png" alt="componente de clase">
+                    </li>
+                    <li>
+                      <p>una vez termina la instalacion abriremos el proyecto con visual estudio code o su editor de codigo de preferencia</p>
+                      <img class="img-fluid w-50 border-5"  src="./img/sesion-1/proyecto-creado.png" alt="componente de clase">
+                    </li>
+                    <li>
+                      <p>Ahora vamos a la parte superior de nuestro visual estudio code donde dice <code>Terminal</code> y luego <code>New Terminal</code> para que se nos abra la terminal o consola integrada de VS-CODE, una vez abierta ejecutaremos el comando
+                      <code>npm run dev</code> para levantar nuestra aplicacion en modo de desarrollo</p>
+                      <img class="img-fluid w-50 border-5"  src="./img/sesion-1/up-app.png" alt="componente de clase">
+                    </li>
+                    <li>
+                      <p>Nos mostrara un mensaje que dice que la app se encuentra corriento en 
+                        <a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">http://localhost:3000/</a> y al acceder a esta URL podremos observar en nuestro explorador nuesta aplicacion ejecutandose
+                      </p>
+                      <img class="img-fluid w-50 border-5"  src="./img/sesion-1/up-page.png" alt="componente de clase">
+                    </li>
+                   
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <!-- <h6>Ejercicios propuestos.</h6> -->
+              <!-- <ul>
+                <li>
+                  Crear un formulario que permita el ingreso de 3 numeros para realizar la suma de los 3, validando que
+                  solo se puedan sumar numeros positivos y mostrandole el resultado al usuario.
+                  <a class="link-style" href="https://github.com/enyoitech/sesion-24-ejercicio-1" target="_blank"
+                    rel="solucion">Solucion.</a>
+                </li>
+                <li>
+                  Crear un formulario que permita el ingreso de 3 numeros diferentes y los ordene en orden de mayor a
+                  menor, mostrandole el resultado al usuario.
+                  <a class="link-style" href="https://github.com/enyoitech/sesion-24-ejercicio-2" target="_blank"
+                    rel="Solucion">Solucion.</a>
+                </li>
+                <li>
+                  Crear un formulario que permita el ingreso de un E-mail, un numero celular y los enmascare. Ejemplo
+                  pe*******@gmail.com / 31*********16
+                  <a class="link-style" href="https://github.com/enyoitech/-sesion-24-ejercicio-3" target="_blank"
+                    rel="solucion">Solucion.</a>
+                </li>
+              </ul> -->
+            </div>
+        </section>
+
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
