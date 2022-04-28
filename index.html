@@ -493,20 +493,8 @@
                 React.
               </a>
             </li>
-            <li>Crear y conectar nuestro primer 
-              <a class="link-style" href="https://es.reactjs.org/docs/react-component.html" target="_blank"
-                rel="Ampliar-informacion">
-                componente
-              </a>
-              en React.
-            </li>
-            <li>Introduccion a las  
-              <a class="link-style" href="https://es.reactjs.org/docs/render-props.html" target="_blank"
-                rel="Ampliar-informacion">
-                Props
-              </a>
-              en los componentes de React.
-            </li>
+           
+            
           </ul>
           <h3>Documentacion Recomendada</h3>
           <ul>
@@ -526,7 +514,7 @@
           </ul>
           <p class="my-2">
             Codigo trabajado en
-            <a class="link-style" href="https://github.com/enyoitech/modulo-2-sesion-2"> clase</a>
+            <a class="link-style" href="https://github.com/enyoitech/modulo-2-sesion-3"> clase</a>
           </p>
           <div class="accordion" id="accordionToggle3">
             <div class="accordion-item">
@@ -588,98 +576,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Creando nuestro primer componente en React
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionToggle">
-                <div class="accordion-body">
-                  <p>
-                    Crear un componente en react es bastante facil y sencillo lo primero que vamos ha hacer es crear un archivo de extension <code>.jsx</code> aunque tambien puede ser un archivo de extension <code>.js</code> en nuestro caso lo haremos con extension <code>.jsx</code> y lo llamaremos <code>ComponenteSaludo.jsx</code> en nuestra carpeta <code>src</code> y contendra la siguient estructura
-                  </p>
-                <img class="img-fluid w-75 rounded-3" src="./img/sesion-2/componente.png" alt="">
-                <p>en la anterio estructura podemos identificar la importacion a React para poder crear nuestros elementos.
-                </p>
-                <p>
-                  Una constante para poder guardar lo que nos retorna una funcion anonima.
-                </p>
-                <p>
-                  La funcion anonima retorna una etiqueta <code>div</code> que contiene una etiqueta <code>h1</code> con un mensaje de saludo a una persona.
-                </p>
-                  <p>
-                    tambien contiene la palabra <strong>export</strong> la cual nos permite exportar el contenido de nuestra funcion para ser importado (<strong>import</strong>) y utilizado en otro componente.
-                  </p>
-                  <p>
-                    Nos dirigimos a nuestro componente <code>App.jsx</code> y eliminamos el contenido que pueda tener en el <strong>return</strong> y remplazamos por la siguiente sintaxis.
-                  </p>
-                  <img class="img-fluid w-50 rounded-3" src="./img/sesion-2/app-component.png" alt="">
-                  <p>En la imagen anterior tambien podemos detallar que realizamos la importacion
-                    de nuestro <code>ComponenteSaludo</code> el nombre del componente se coloca entre 
-                    <code>{ ComponenteSaludo }</code> porque no fue exportado por <code>default</code>.
-                  </p>
-                  <p>
-                    Ahora nos fijaremos en el <strong>return</strong>  de nuestra <strong>funcion App</strong>, notese que tenemos un <strong>div</strong> (esto se debe que siempre debe existir un elemento padre) y dentro de este hacemos la insercion de nuestro
-                    <code>ComponenteSaludo</code> y la insercion del mismo se realiza como si este fuese 
-                    una etiqueta html <<code>ComponenteSaludo/</code>>
-                  </p>
-                  <p>
-                    abrimos nuestra consola y procedemos a ejecutar el comando <code>npm run dev</code> para levantar nuestro servidor en modo desarrollo y podremos ver en ejecucion nuestra aplicacion en la URL <code>http://localhost:3000/</code>.
-                  </p>
-                  <img class="img-fluid w-50 rounded-3 border-2" src="./img/sesion-2/codigo-upp.png" alt="">
-
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Pasando Props entre Componentes
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionToggle">
-                <div class="accordion-body">
-                  <p>
-                   Procederemos a realizar una pequeña modificacion, justo en la insercion de nuestro componente quedando de la siguiente sintaxis 
-                  </p>
-                  <img class="img-fluid w-50 rounded-3" src="./img/sesion-2/props-app.png" alt="componente funcional">
-                  <p>
-                    Como podemos observar en la siguiente sintaxis <code> nombre={'Maria'} </code> estamos creando una propiedad llamada <strong>nombre</strong> la cual sera asignada
-                    a un
-                    <a class="link-style" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects" target="_blank" rel="noopener noreferrer">Objeto</a> Props el cual forma parte inerente de nuestro componente <code>ComponenteSaludo</code> y contiene como valor un <strong>string</strong> con el valor <strong>Maria</strong> 
-                  </p>
-                  <h3>Modificando nuestro componente <code>ComponenteSaludo</code></h3>
-                  <p>
-                    Adicionamos props como parametro de nuestra 
-                    <a class="link-style" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank" rel="noopener noreferrer"> funcion arrow</a> la cual quedara recibiendo un objeto de props enviadas desde donde fue llamado el componente.
-                  </p>
-                  <img class="img-fluid w-75 rounded-3" src="./img/sesion-2/props-component.png" alt="componente funcional">
-                  <p>
-                   Podemos observar que estamos ejecutando<strong>codigo JavaScript</strong> dentro de una etiqueta <strong>HTML</strong> para lo cual utilizamos <code>{ }</code> y dentro de el accedemos a la propiedad <strong>nombre</strong>( <code>{props.nombre}</code> ) de nuestro objeto de Props 
-                   pasado a nuestro componente <code>ComponenteSaludo</code> desde nuestro component 
-                   <code>App</code>.
-                  </p>
-                  <p>
-                    Si vamos a nuestro explorador podemos observar que no ha sufrido cambio alguno aparenteme, ya que sigue mostrando el mismo mensaje.
-                  </p>
-                  <img class="img-fluid w-50 rounded-3 border-2" src="./img/sesion-2/codigo-upp.png" alt="">
-                  <p>
-                    Si queremos ver otro nombre renderizado solo debemos cambiarlo justo donde nuestro componente <code>ComponenteSaludo</code> es llamado.
-                  </p>
-                  <img class="img-fluid w-50 rounded-3 border-2" src="./img/sesion-2/nuevo-name-app.png" alt="">
-                  <p>
-                    y en nuestro explorador podremos observar:
-                  </p>
-                  <img class="img-fluid w-50 rounded-3 border-2" src="./img/sesion-2/explorador-nuevo.png" alt="">
-
-                </div>
-              </div>
-            </div>
+           
             <div>
               <!-- <h6>Ejercicios propuestos.</h6> -->
               <!-- <ul>
