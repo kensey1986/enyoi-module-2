@@ -19,7 +19,7 @@
     <div class="row">
       <div class="col-12 my-3">
         <h4>Contenido.</h4>
-        <section  id="sesion-01" class="my-2">
+        <section id="sesion-01" class="my-2">
           <h5>Sesion Nº-01</h5>
           <h6>Objeivos</h6>
           <ul>
@@ -38,16 +38,19 @@
           <h3>Documentacion Recomendada</h3>
           <ul>
             <li>
-              Documentacion de 
-              <a class="link-style" href="https://es.reactjs.org/docs/create-a-new-react-app.html" target="_blank" rel="noopener noreferrer">React</a>
+              Documentacion de
+              <a class="link-style" href="https://es.reactjs.org/docs/create-a-new-react-app.html" target="_blank"
+                rel="noopener noreferrer">React</a>
             </li>
             <li>
-              Documentacion de 
-              <a class="link-style" href="https://vitejs.dev/guide/#scaffolding-your-first-vite-project" target="_blank" rel="noopener noreferrer">Vite</a>
+              Documentacion de
+              <a class="link-style" href="https://vitejs.dev/guide/#scaffolding-your-first-vite-project" target="_blank"
+                rel="noopener noreferrer">Vite</a>
             </li>
             <li>
-              <a class="link-style" href="https://es.reactjs.org/docs/components-and-props.html" target="_blank" rel="noopener noreferrer">Componentes</a>
-               en React
+              <a class="link-style" href="https://es.reactjs.org/docs/components-and-props.html" target="_blank"
+                rel="noopener noreferrer">Componentes</a>
+              en React
             </li>
           </ul>
           <p class="my-2">
@@ -184,7 +187,7 @@
               <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree"
                 data-bs-parent="#accordionToggle">
                 <div class="accordion-body">
-                  <p>Nosotros trabajaremos con 
+                  <p>Nosotros trabajaremos con
                     <a href="https://vitejs.dev/">Vite</a>
                     para crear nuestra app-react.
                   </p>
@@ -195,50 +198,71 @@
                     <li>
                       Abrimos nuestra consola (powershell, cmd, etc) y ejecutamos el siguiente comando:
                       <code>npm create vite@latest</code>
-                  <img class="img-fluid w-50 rounded-3"  src="./img/sesion-1/consola-create.png" alt="componente de clase">
+                      <img class="img-fluid w-50 rounded-3" src="./img/sesion-1/consola-create.png"
+                        alt="componente de clase">
 
                     </li>
                     <li>
                       <p>En nuestra consola nos pedira autorizacion para instalar un conjunto de paquetes
                         (packets) procedemos a precionar la tecla 'Y', para indicar que aceptamos.
                       </p>
-                      <img class="img-fluid w-50 rounded-3"  src="./img/sesion-1/consola-create-option.png" alt="componente de clase">
+                      <img class="img-fluid w-50 rounded-3" src="./img/sesion-1/consola-create-option.png"
+                        alt="componente de clase">
                     </li>
                     <li>
-                      <p>Hara una instalacion rapida y nos pedira un nombre para nuestra app (Proyect name), la llamaremos
+                      <p>Hara una instalacion rapida y nos pedira un nombre para nuestra app (Proyect name), la
+                        llamaremos
                         <code>miPrimeraApp</code> y precionaremos <strong>Enter</strong>.
                       </p>
-                      <img class="img-fluid w-50 rounded-3"  src="./img/sesion-1/consola-create-name.png" alt="componente de clase">
+                      <img class="img-fluid w-50 rounded-3" src="./img/sesion-1/consola-create-name.png"
+                        alt="componente de clase">
                     </li>
                     <li>
-                      Luego nos pedira el nombre del paquete (Pakage name) solo precionaremos <strong>Enter</strong> y en el menu de opciones que se nos despliega bajamos hasta selecionar <code>react</code> y precionamos nuevamente <strong>Enter</strong>
-                      <img class="img-fluid w-50 rounded-3"  src="./img/sesion-1/consola-create-select.png" alt="componente de clase">
+                      Luego nos pedira el nombre del paquete (Pakage name) solo precionaremos <strong>Enter</strong> y
+                      en el menu de opciones que se nos despliega bajamos hasta selecionar <code>react</code> y
+                      precionamos nuevamente <strong>Enter</strong>
+                      <img class="img-fluid w-50 rounded-3" src="./img/sesion-1/consola-create-select.png"
+                        alt="componente de clase">
                     </li>
                     <li>
-                      <p>Luego nos pedira que seleccionemos entre trabajar con JavaScript o trabajarlo con Typescript, para nuestro caso selecionaremos <code>react</code> puro y presionamos <strong>Enter</strong>. </p>
-                      <img class="img-fluid w-50 rounded-3"  src="./img/sesion-1/consola-create-type.png" alt="componente de clase">
-                    </li>
-                    <li>
-                      <p> Nos avisara que ha creado el proyecto y nos ofrecera un conjunto de instrucciones a seguir, procedemos a ingresar en consola <code>cd miPrimeraApp</code> y precionamos  <strong>Enter</strong> luego ejecutaremos el siguiente comando <code>npm install</code> 
-                        y precionamos  <strong>Enter</strong> procedemos a esperar que se cree nuestro proyecto</p>
-                      <img class="img-fluid w-50 rounded-3"  src="./img/sesion-1/consola-create-instrucciones.png" alt="componente de clase">
-                    </li>
-                    <li>
-                      <p>una vez termina la instalacion abriremos el proyecto con visual estudio code o su editor de codigo de preferencia</p>
-                      <img class="img-fluid w-50 rounded-3"  src="./img/sesion-1/proyecto-creado.png" alt="componente de clase">
-                    </li>
-                    <li>
-                      <p>Ahora vamos a la parte superior de nuestro visual estudio code donde dice <code>Terminal</code> y luego <code>New Terminal</code> para que se nos abra la terminal o consola integrada de VS-CODE, una vez abierta ejecutaremos el comando
-                      <code>npm run dev</code> para levantar nuestra aplicacion en modo de desarrollo</p>
-                      <img class="img-fluid w-50 rounded-3"  src="./img/sesion-1/up-app.png" alt="componente de clase">
-                    </li>
-                    <li>
-                      <p>Nos mostrara un mensaje que dice que la app se encuentra corriento en 
-                        <a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">http://localhost:3000/</a> y al acceder a esta URL podremos observar en nuestro explorador nuesta aplicacion ejecutandose
+                      <p>Luego nos pedira que seleccionemos entre trabajar con JavaScript o trabajarlo con Typescript,
+                        para nuestro caso selecionaremos <code>react</code> puro y presionamos <strong>Enter</strong>.
                       </p>
-                      <img class="img-fluid w-50 rounded-3"  src="./img/sesion-1/up-page.png" alt="componente de clase">
+                      <img class="img-fluid w-50 rounded-3" src="./img/sesion-1/consola-create-type.png"
+                        alt="componente de clase">
                     </li>
-                   
+                    <li>
+                      <p> Nos avisara que ha creado el proyecto y nos ofrecera un conjunto de instrucciones a seguir,
+                        procedemos a ingresar en consola <code>cd miPrimeraApp</code> y precionamos
+                        <strong>Enter</strong> luego ejecutaremos el siguiente comando <code>npm install</code>
+                        y precionamos <strong>Enter</strong> procedemos a esperar que se cree nuestro proyecto
+                      </p>
+                      <img class="img-fluid w-50 rounded-3" src="./img/sesion-1/consola-create-instrucciones.png"
+                        alt="componente de clase">
+                    </li>
+                    <li>
+                      <p>una vez termina la instalacion abriremos el proyecto con visual estudio code o su editor de
+                        codigo de preferencia</p>
+                      <img class="img-fluid w-50 rounded-3" src="./img/sesion-1/proyecto-creado.png"
+                        alt="componente de clase">
+                    </li>
+                    <li>
+                      <p>Ahora vamos a la parte superior de nuestro visual estudio code donde dice <code>Terminal</code>
+                        y luego <code>New Terminal</code> para que se nos abra la terminal o consola integrada de
+                        VS-CODE, una vez abierta ejecutaremos el comando
+                        <code>npm run dev</code> para levantar nuestra aplicacion en modo de desarrollo
+                      </p>
+                      <img class="img-fluid w-50 rounded-3" src="./img/sesion-1/up-app.png" alt="componente de clase">
+                    </li>
+                    <li>
+                      <p>Nos mostrara un mensaje que dice que la app se encuentra corriento en
+                        <a href="http://localhost:3000/" target="_blank"
+                          rel="noopener noreferrer">http://localhost:3000/</a> y al acceder a esta URL podremos observar
+                        en nuestro explorador nuesta aplicacion ejecutandose
+                      </p>
+                      <img class="img-fluid w-50 rounded-3" src="./img/sesion-1/up-page.png" alt="componente de clase">
+                    </li>
+
                   </ul>
                 </div>
               </div>
@@ -270,8 +294,8 @@
         </section>
 
       </div>
-       <!-- inicio sesion -2  -->
-       <div class="col-12 mt-5">
+      <!-- inicio sesion -2  -->
+      <div class="col-12 mt-5">
         <section class="my-2">
           <h5>Sesion Nº-02</h5>
           <h6>Objeivos</h6>
@@ -281,14 +305,14 @@
                 React.
               </a>
             </li>
-            <li>Crear y conectar nuestro primer 
+            <li>Crear y conectar nuestro primer
               <a class="link-style" href="https://es.reactjs.org/docs/react-component.html" target="_blank"
                 rel="Ampliar-informacion">
                 componente
               </a>
               en React.
             </li>
-            <li>Introduccion a las  
+            <li>Introduccion a las
               <a class="link-style" href="https://es.reactjs.org/docs/render-props.html" target="_blank"
                 rel="Ampliar-informacion">
                 Props
@@ -299,17 +323,21 @@
           <h3>Documentacion Recomendada</h3>
           <ul>
             <li>
-              <a class="link-style" href="https://es.reactjs.org/docs/react-dom.html" target="_blank" rel="noopener noreferrer">ReactDOM</a>
+              <a class="link-style" href="https://es.reactjs.org/docs/react-dom.html" target="_blank"
+                rel="noopener noreferrer">ReactDOM</a>
             </li>
             <li>
-              <a class="link-style" href="https://es.reactjs.org/docs/react-dom-client.html" target="_blank" rel="noopener noreferrer">ReactDOM-Client</a>
+              <a class="link-style" href="https://es.reactjs.org/docs/react-dom-client.html" target="_blank"
+                rel="noopener noreferrer">ReactDOM-Client</a>
             </li>
             <li>
-              <a class="link-style" href="https://es.reactjs.org/docs/rendering-elements.html" target="_blank" rel="noopener noreferrer">Renderizando elementos</a>
+              <a class="link-style" href="https://es.reactjs.org/docs/rendering-elements.html" target="_blank"
+                rel="noopener noreferrer">Renderizando elementos</a>
             </li>
             <li>
-              <a class="link-style" href="https://es.reactjs.org/docs/render-props.html" target="_blank" rel="noopener noreferrer">Props</a>
-               en React
+              <a class="link-style" href="https://es.reactjs.org/docs/render-props.html" target="_blank"
+                rel="noopener noreferrer">Props</a>
+              en React
             </li>
           </ul>
           <p class="my-2">
@@ -328,37 +356,54 @@
                 data-bs-parent="#accordionToggle2">
                 <div class="accordion-body">
                   <p>
-                    Empezaremos analizando el arbol de carpetas de nuestra  aplicacion creada con creada con  
-                    <a class="link-style" href="https://vitejs.dev/guide/#scaffolding-your-first-vite-project" target="_blank" rel="noopener noreferrer">Vite</a>.
+                    Empezaremos analizando el arbol de carpetas de nuestra aplicacion creada con creada con
+                    <a class="link-style" href="https://vitejs.dev/guide/#scaffolding-your-first-vite-project"
+                      target="_blank" rel="noopener noreferrer">Vite</a>.
                   </p>
                   <img class="img-fluid w-25 rounded-3" src="./img/sesion-2/arbol-carpetas.png" alt="">
                   <p>
-                    procedemos a abrir nuestro arhivo <code>index.html</code> donde nos encontraremos con una estructura basica de un documento 
-                    <a class="link-style" href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank" rel="noopener noreferrer">HTML</a>.
+                    procedemos a abrir nuestro arhivo <code>index.html</code> donde nos encontraremos con una estructura
+                    basica de un documento
+                    <a class="link-style"
+                      href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics"
+                      target="_blank" rel="noopener noreferrer">HTML</a>.
                   </p>
                   <img class="img-fluid w-75 rounded-3" src="./img/sesion-2/index-html.png" alt="">
-                  <p>Nos dirigiremos a la parte inferior de nuestro documento y nos vamos a fijar en la etiqueta <<code>div id="root" /div</code>> ya que aqui sera el lugar donde se renderizara el codigo de nuestra aplicacion.
+                  <p>Nos dirigiremos a la parte inferior de nuestro documento y nos vamos a fijar en la etiqueta <<code>
+                      div id="root" /div</code>> ya que aqui sera el lugar donde se renderizara el codigo de nuestra
+                      aplicacion.
                   </p>
 
                   <p>
-                    Bajando tenemos nuestra etiqueta <strong>script</strong> esta tiene como atributo <code>type="module"</code> lo cual nos permitira trabajar con <strong>imports</strong> y <strong>exports</strong> de componentes, funciones y clases.
+                    Bajando tenemos nuestra etiqueta <strong>script</strong> esta tiene como atributo
+                    <code>type="module"</code> lo cual nos permitira trabajar con <strong>imports</strong> y
+                    <strong>exports</strong> de componentes, funciones y clases.
                   </p>
-                  <p>Procedemos a revisar el archivo <code>main.jsx</code> el cual se encuentra conectado a nuestro documento
-                  html a traves de la etiqueta <strong>script</strong> del mismo.
-                </p>
-                <img class="img-fluid w-75 rounded-3" src="./img/sesion-2/main.png" alt="">
-                <p>
-                  En este arhivo nos encontramos con la importacion a 
-                  <a class="link-style" href="https://es.reactjs.org/docs/create-a-new-react-app.html" target="_blank" rel="noopener noreferrer">React</a>
-                   usando la siguiente sintaxis
-                  <code>import React from 'react' </code> tambien nos encontramos con la importacion de 
-                  <a class="link-style" href="https://es.reactjs.org/docs/react-dom.html" target="_blank" rel="noopener noreferrer">ReactDOM</a> mas exactamente importacion a 
-                  <a class="link-style" href="https://es.reactjs.org/docs/react-dom-client.html" target="_blank" rel="noopener noreferrer">ReactDOMClient</a>
-                </p>
-                <p>
-                    en la siguiente bloque de codigo encarga del proceso de crear el arbol (por asi llamarlo) de elemntos que seran renderizados, entonces se accede al nodo donde se llevara a cabo el rederizado de elementos ( recordemos que el nodo con <strong>id='root'</strong> se encuentra en nuestro archivo <strong>index.html</strong>  asignado y es un div) y tambien procedemos a enviarle el componente que sera renderizado en este caso el componente <<code>App /</code>> junto con todo su arbol de componentes hijos.
-                </p>
-                <img class="img-fluid w-75 rounded-3" src="./img/sesion-2/react-dom.png" alt="">
+                  <p>Procedemos a revisar el archivo <code>main.jsx</code> el cual se encuentra conectado a nuestro
+                    documento
+                    html a traves de la etiqueta <strong>script</strong> del mismo.
+                  </p>
+                  <img class="img-fluid w-75 rounded-3" src="./img/sesion-2/main.png" alt="">
+                  <p>
+                    En este arhivo nos encontramos con la importacion a
+                    <a class="link-style" href="https://es.reactjs.org/docs/create-a-new-react-app.html" target="_blank"
+                      rel="noopener noreferrer">React</a>
+                    usando la siguiente sintaxis
+                    <code>import React from 'react' </code> tambien nos encontramos con la importacion de
+                    <a class="link-style" href="https://es.reactjs.org/docs/react-dom.html" target="_blank"
+                      rel="noopener noreferrer">ReactDOM</a> mas exactamente importacion a
+                    <a class="link-style" href="https://es.reactjs.org/docs/react-dom-client.html" target="_blank"
+                      rel="noopener noreferrer">ReactDOMClient</a>
+                  </p>
+                  <p>
+                    en la siguiente bloque de codigo encarga del proceso de crear el arbol (por asi llamarlo) de
+                    elemntos que seran renderizados, entonces se accede al nodo donde se llevara a cabo el rederizado de
+                    elementos ( recordemos que el nodo con <strong>id='root'</strong> se encuentra en nuestro archivo
+                    <strong>index.html</strong> asignado y es un div) y tambien procedemos a enviarle el componente que
+                    sera renderizado en este caso el componente <<code>App /</code>> junto con todo su arbol de
+                      componentes hijos.
+                  </p>
+                  <img class="img-fluid w-75 rounded-3" src="./img/sesion-2/react-dom.png" alt="">
                 </div>
               </div>
             </div>
@@ -373,35 +418,47 @@
                 data-bs-parent="#accordionToggle">
                 <div class="accordion-body">
                   <p>
-                    Crear un componente en react es bastante facil y sencillo lo primero que vamos ha hacer es crear un archivo de extension <code>.jsx</code> aunque tambien puede ser un archivo de extension <code>.js</code> en nuestro caso lo haremos con extension <code>.jsx</code> y lo llamaremos <code>ComponenteSaludo.jsx</code> en nuestra carpeta <code>src</code> y contendra la siguient estructura
+                    Crear un componente en react es bastante facil y sencillo lo primero que vamos ha hacer es crear un
+                    archivo de extension <code>.jsx</code> aunque tambien puede ser un archivo de extension
+                    <code>.js</code> en nuestro caso lo haremos con extension <code>.jsx</code> y lo llamaremos
+                    <code>ComponenteSaludo.jsx</code> en nuestra carpeta <code>src</code> y contendra la siguient
+                    estructura
                   </p>
-                <img class="img-fluid w-75 rounded-3" src="./img/sesion-2/componente.png" alt="">
-                <p>en la anterio estructura podemos identificar la importacion a React para poder crear nuestros elementos.
-                </p>
-                <p>
-                  Una constante para poder guardar lo que nos retorna una funcion anonima.
-                </p>
-                <p>
-                  La funcion anonima retorna una etiqueta <code>div</code> que contiene una etiqueta <code>h1</code> con un mensaje de saludo a una persona.
-                </p>
-                  <p>
-                    tambien contiene la palabra <strong>export</strong> la cual nos permite exportar el contenido de nuestra funcion para ser importado (<strong>import</strong>) y utilizado en otro componente.
+                  <img class="img-fluid w-75 rounded-3" src="./img/sesion-2/componente.png" alt="">
+                  <p>en la anterio estructura podemos identificar la importacion a React para poder crear nuestros
+                    elementos.
                   </p>
                   <p>
-                    Nos dirigimos a nuestro componente <code>App.jsx</code> y eliminamos el contenido que pueda tener en el <strong>return</strong> y remplazamos por la siguiente sintaxis.
+                    Una constante para poder guardar lo que nos retorna una funcion anonima.
+                  </p>
+                  <p>
+                    La funcion anonima retorna una etiqueta <code>div</code> que contiene una etiqueta <code>h1</code>
+                    con un mensaje de saludo a una persona.
+                  </p>
+                  <p>
+                    tambien contiene la palabra <strong>export</strong> la cual nos permite exportar el contenido de
+                    nuestra funcion para ser importado (<strong>import</strong>) y utilizado en otro componente.
+                  </p>
+                  <p>
+                    Nos dirigimos a nuestro componente <code>App.jsx</code> y eliminamos el contenido que pueda tener en
+                    el <strong>return</strong> y remplazamos por la siguiente sintaxis.
                   </p>
                   <img class="img-fluid w-50 rounded-3" src="./img/sesion-2/app-component.png" alt="">
                   <p>En la imagen anterior tambien podemos detallar que realizamos la importacion
-                    de nuestro <code>ComponenteSaludo</code> el nombre del componente se coloca entre 
+                    de nuestro <code>ComponenteSaludo</code> el nombre del componente se coloca entre
                     <code>{ ComponenteSaludo }</code> porque no fue exportado por <code>default</code>.
                   </p>
                   <p>
-                    Ahora nos fijaremos en el <strong>return</strong>  de nuestra <strong>funcion App</strong>, notese que tenemos un <strong>div</strong> (esto se debe que siempre debe existir un elemento padre) y dentro de este hacemos la insercion de nuestro
-                    <code>ComponenteSaludo</code> y la insercion del mismo se realiza como si este fuese 
+                    Ahora nos fijaremos en el <strong>return</strong> de nuestra <strong>funcion App</strong>, notese
+                    que tenemos un <strong>div</strong> (esto se debe que siempre debe existir un elemento padre) y
+                    dentro de este hacemos la insercion de nuestro
+                    <code>ComponenteSaludo</code> y la insercion del mismo se realiza como si este fuese
                     una etiqueta html <<code>ComponenteSaludo/</code>>
                   </p>
                   <p>
-                    abrimos nuestra consola y procedemos a ejecutar el comando <code>npm run dev</code> para levantar nuestro servidor en modo desarrollo y podremos ver en ejecucion nuestra aplicacion en la URL <code>http://localhost:3000/</code>.
+                    abrimos nuestra consola y procedemos a ejecutar el comando <code>npm run dev</code> para levantar
+                    nuestro servidor en modo desarrollo y podremos ver en ejecucion nuestra aplicacion en la URL
+                    <code>http://localhost:3000/</code>.
                   </p>
                   <img class="img-fluid w-50 rounded-3 border-2" src="./img/sesion-2/codigo-upp.png" alt="">
 
@@ -419,31 +476,45 @@
                 data-bs-parent="#accordionToggle">
                 <div class="accordion-body">
                   <p>
-                   Procederemos a realizar una pequeña modificacion, justo en la insercion de nuestro componente quedando de la siguiente sintaxis 
+                    Procederemos a realizar una pequeña modificacion, justo en la insercion de nuestro componente
+                    quedando de la siguiente sintaxis
                   </p>
                   <img class="img-fluid w-50 rounded-3" src="./img/sesion-2/props-app.png" alt="componente funcional">
                   <p>
-                    Como podemos observar en la siguiente sintaxis <code> nombre={'Maria'} </code> estamos creando una propiedad llamada <strong>nombre</strong> la cual sera asignada
+                    Como podemos observar en la siguiente sintaxis <code> nombre={'Maria'} </code> estamos creando una
+                    propiedad llamada <strong>nombre</strong> la cual sera asignada
                     a un
-                    <a class="link-style" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects" target="_blank" rel="noopener noreferrer">Objeto</a> Props el cual forma parte inerente de nuestro componente <code>ComponenteSaludo</code> y contiene como valor un <strong>string</strong> con el valor <strong>Maria</strong> 
+                    <a class="link-style"
+                      href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects"
+                      target="_blank" rel="noopener noreferrer">Objeto</a> Props el cual forma parte inerente de nuestro
+                    componente <code>ComponenteSaludo</code> y contiene como valor un <strong>string</strong> con el
+                    valor <strong>Maria</strong>
                   </p>
                   <h3>Modificando nuestro componente <code>ComponenteSaludo</code></h3>
                   <p>
-                    Adicionamos props como parametro de nuestra 
-                    <a class="link-style" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank" rel="noopener noreferrer"> funcion arrow</a> la cual quedara recibiendo un objeto de props enviadas desde donde fue llamado el componente.
+                    Adicionamos props como parametro de nuestra
+                    <a class="link-style"
+                      href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions"
+                      target="_blank" rel="noopener noreferrer"> funcion arrow</a> la cual quedara recibiendo un objeto
+                    de props enviadas desde donde fue llamado el componente.
                   </p>
-                  <img class="img-fluid w-75 rounded-3" src="./img/sesion-2/props-component.png" alt="componente funcional">
+                  <img class="img-fluid w-75 rounded-3" src="./img/sesion-2/props-component.png"
+                    alt="componente funcional">
                   <p>
-                   Podemos observar que estamos ejecutando<strong>codigo JavaScript</strong> dentro de una etiqueta <strong>HTML</strong> para lo cual utilizamos <code>{ }</code> y dentro de el accedemos a la propiedad <strong>nombre</strong>( <code>{props.nombre}</code> ) de nuestro objeto de Props 
-                   pasado a nuestro componente <code>ComponenteSaludo</code> desde nuestro component 
-                   <code>App</code>.
+                    Podemos observar que estamos ejecutando<strong>codigo JavaScript</strong> dentro de una etiqueta
+                    <strong>HTML</strong> para lo cual utilizamos <code>{ }</code> y dentro de el accedemos a la
+                    propiedad <strong>nombre</strong>( <code>{props.nombre}</code> ) de nuestro objeto de Props
+                    pasado a nuestro componente <code>ComponenteSaludo</code> desde nuestro component
+                    <code>App</code>.
                   </p>
                   <p>
-                    Si vamos a nuestro explorador podemos observar que no ha sufrido cambio alguno aparenteme, ya que sigue mostrando el mismo mensaje.
+                    Si vamos a nuestro explorador podemos observar que no ha sufrido cambio alguno aparenteme, ya que
+                    sigue mostrando el mismo mensaje.
                   </p>
                   <img class="img-fluid w-50 rounded-3 border-2" src="./img/sesion-2/codigo-upp.png" alt="">
                   <p>
-                    Si queremos ver otro nombre renderizado solo debemos cambiarlo justo donde nuestro componente <code>ComponenteSaludo</code> es llamado.
+                    Si queremos ver otro nombre renderizado solo debemos cambiarlo justo donde nuestro componente
+                    <code>ComponenteSaludo</code> es llamado.
                   </p>
                   <img class="img-fluid w-50 rounded-3 border-2" src="./img/sesion-2/nuevo-name-app.png" alt="">
                   <p>
@@ -480,36 +551,41 @@
         </section>
 
       </div>
-       <!-- fin sesion -2  -->
-       <!--inicio sesion -3  -->
-       <div class="col-12 mt-5">
+      <!-- fin sesion -2  -->
+      <!--inicio sesion -3  -->
+      <div class="col-12 mt-5">
         <section class="my-2">
           <h5>Sesion Nº-03</h5>
           <h6>Objeivos</h6>
           <ul>
-            <li>Reutilizar un componente el cual se hara el llamado a 2 componentes diferentes pero enviaremos la misma data
+            <li>Reutilizar un componente el cual se hara el llamado a 2 componentes diferentes pero enviaremos la misma
+              data
               a cada uno de ellos.
               <a class="link-style" href="https://es.reactjs.org/" target="_blank" rel="Ampliar-informacion">
                 React.
               </a>
             </li>
-           
-            
+
+
           </ul>
           <h3>Documentacion Recomendada</h3>
           <ul>
             <li>
-              <a class="link-style" href="https://es.reactjs.org/docs/react-dom.html" target="_blank" rel="noopener noreferrer">ReactDOM</a>
+              <a class="link-style" href="https://es.reactjs.org/docs/react-dom.html" target="_blank"
+                rel="noopener noreferrer">ReactDOM</a>
             </li>
             <li>
-              <a class="link-style" href="https://es.reactjs.org/docs/react-dom-client.html" target="_blank" rel="noopener noreferrer">ReactDOM-Client</a>
+              <a class="link-style" href="https://es.reactjs.org/docs/react-dom-client.html" target="_blank"
+                rel="noopener noreferrer">ReactDOM-Client</a>
             </li>
             <li>
-              <a class="link-style" href="https://es.reactjs.org/docs/rendering-elements.html" target="_blank" rel="noopener noreferrer">Renderizando elementos</a>
+              <a class="link-style" href="https://es.reactjs.org/docs/rendering-elements.html" target="_blank"
+                rel="noopener noreferrer">Renderizando elementos</a>
             </li>
             <li>
-              <a class="link-style" href="https://es.reactjs.org/docs/render-props.html" target="_blank" rel="noopener noreferrer">Props</a>
-               en React
+              <a class="link-style" href="https://es.reactjs.org/docs/render-props.html" target="_blank"
+                rel="noopener noreferrer">Props</a>
+              en React
             </li>
           </ul>
           <p class="my-2">
@@ -528,19 +604,22 @@
                 data-bs-parent="#accordionToggle3">
                 <div class="accordion-body">
                   <p>
-                    Crearemos un nuevo proyecto siguiendo las instrucciones descritas en la 
+                    Crearemos un nuevo proyecto siguiendo las instrucciones descritas en la
                     <a class="link-style" href="#sesion-01">Sesion Nº 1</a>
                   </p>
                   <p>
-                    Una vez creado nuestro proyecto procedemos a crear una carpeta en nuestro <code>src</code> que llamaremos <code>Components</code>
+                    Una vez creado nuestro proyecto procedemos a crear una carpeta en nuestro <code>src</code> que
+                    llamaremos <code>Components</code>
                   </p>
                   <p>
-                    Dentro de nuestra carpeta crearemos 2 archivos, uno llamado <code>Head.jsx</code> y otro llamado <code>Body.jsx</code>
+                    Dentro de nuestra carpeta crearemos 2 archivos, uno llamado <code>Head.jsx</code> y otro llamado
+                    <code>Body.jsx</code>
                   </p>
                   <img class="img-fluid w-25 rounded-3" src="./img/sesion-3/img-01.png" alt="">
                   <br>
                   <p>
-                    Luego procederemos a crear nuestras respectiva estructura de componente funcional para cada uno de nuestros archivos
+                    Luego procederemos a crear nuestras respectiva estructura de componente funcional para cada uno de
+                    nuestros archivos
                     y solo cambiaremos el mensaje que vamos a retornar:
                   </p>
                   <img class="img-fluid  rounded-3" src="./img/sesion-3/img-02.png" alt="">
@@ -549,34 +628,38 @@
                   </p>
                   <img class="img-fluid w-50  rounded-3" src="./img/sesion-3/img-03.png" alt="">
                   <br>
-                  <p>Abrimos nuestra consola y ejecutamos el comando <code>npm run dev</code> para levantar nuestro servidor en modo desarrollo y vaos a nuestro explorador web
+                  <p>Abrimos nuestra consola y ejecutamos el comando <code>npm run dev</code> para levantar nuestro
+                    servidor en modo desarrollo y vaos a nuestro explorador web
                     y ingresamos a <code>http://localhost:3000/</code> para ver nuestra aplicacion corriendo
                   </p>
                   <img class="img-fluid w-50  rounded-3" src="./img/sesion-3/img-04.png" alt="">
                   <br>
                   <p>
-                    Procedemos a crear un Objeto al cual almacenaremos en <code>const cliente</code> y lo enviaremos como parte del objeto <code>props</code> de cada uno de nuestros componentes
+                    Procedemos a crear un Objeto al cual almacenaremos en <code>const cliente</code> y lo enviaremos
+                    como parte del objeto <code>props</code> de cada uno de nuestros componentes
                   </p>
                   <img class="img-fluid w-75  rounded-3" src="./img/sesion-3/img-05.png" alt="">
                   <br>
-                    Desde nuestro componente <code>Head</code> y desde <code>Body</code>
-                    accedemos a nuestro objeto <code>cliente</code> el cual llegan como parte del objeto props a cada uno de nuestros componentes, 
-                    <p>
+                  Desde nuestro componente <code>Head</code> y desde <code>Body</code>
+                  accedemos a nuestro objeto <code>cliente</code> el cual llegan como parte del objeto props a cada uno
+                  de nuestros componentes,
+                  <p>
 
-                      en este caso vamos a mostrar el nombre
-                      que viene en nuestro Objeto <code>cliente</code> para lo cual debemos acceder de la siguiente manera primero <code>{props.cliente}</code> y luego
-                      <code>{props.cliente.nombre}</code>
-                    </p>
+                    en este caso vamos a mostrar el nombre
+                    que viene en nuestro Objeto <code>cliente</code> para lo cual debemos acceder de la siguiente manera
+                    primero <code>{props.cliente}</code> y luego
+                    <code>{props.cliente.nombre}</code>
+                  </p>
                   <img class="img-fluid w-75  rounded-3" src="./img/sesion-3/img-06.png" alt="">
-                    <p>
-                      En nuestro explorador web observaremos:
-                    </p>
+                  <p>
+                    En nuestro explorador web observaremos:
+                  </p>
                   <img class="img-fluid w-75  rounded-3" src="./img/sesion-3/img-07.png" alt="">
 
                 </div>
               </div>
             </div>
-           
+
             <div>
               <!-- <h6>Ejercicios propuestos.</h6> -->
               <!-- <ul>
@@ -603,8 +686,258 @@
         </section>
 
       </div>
-       <!-- fin sesion -3  -->
     </div>
+    <!-- fin sesion -3  -->
+    <!--inicio sesion -4  -->
+    <div class="col-12 mt-5">
+      <section class="my-2">
+        <h5>Sesion Nº-04</h5>
+        <h6>Objeivos</h6>
+        <ul>
+          <li>Introduccion al manejo de
+            <a class="link-style" href="https://es.reactjs.org/docs/faq-state.html" target="_blank"
+              rel="Ampliar-informacion">
+              Estados
+            </a>
+            del componente
+          </li>
+          <li>Introduccion a
+            <a class="link-style" href="https://es.reactjs.org/docs/hooks-intro.html" target="_blank"
+              rel="Ampliar-informacion">
+              React-Hooks
+            </a>
+          </li>
+
+
+        </ul>
+        <h3>Documentacion Recomendada</h3>
+        <ul>
+          <li>
+            <a class="link-style" href="https://es.reactjs.org/docs/react-dom.html" target="_blank"
+              rel="noopener noreferrer">ReactDOM</a>
+          </li>
+          <li>
+            <a class="link-style" href="https://es.reactjs.org/docs/react-dom-client.html" target="_blank"
+              rel="noopener noreferrer">ReactDOM-Client</a>
+          </li>
+          <li>
+            <a class="link-style" href="https://es.reactjs.org/docs/rendering-elements.html" target="_blank"
+              rel="noopener noreferrer">Renderizando elementos</a>
+          </li>
+          <li>
+            <a class="link-style" href="https://es.reactjs.org/docs/render-props.html" target="_blank"
+              rel="noopener noreferrer">Props</a>
+            en React
+          </li>
+        </ul>
+        <p class="my-2">
+          Codigo trabajado en
+          <a class="link-style" href="https://github.com/enyoitech/modulo-2-sesion-4"> clase</a>
+        </p>
+        <div class="accordion" id="accordionToggle4">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading4">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
+                aria-expanded="true" aria-controls="collapseOne">
+                ¿Qué son los estados en React?
+              </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse show" aria-labelledby="heading4"
+              data-bs-parent="#accordionToggle4">
+              <div class="accordion-body">
+                <p>
+                  Los estados son el “corazón” de los componentes de React. Son aquella característica nos permitirá
+                  desarrollar aplicaciones complejas de manera mas facil, rapida y eficiente.
+
+                </p>
+                <p>
+                  Los estados en react nos ayudan persistir informacion a atraves de todos sus componentes.
+                </p>
+                <p>
+                  Un estado en React es, entonces, un almacén de datos mutable (que puede cambiar) de componentes y que
+                  además son
+                  autónomos. O sea, el estado pertenece una clase autónoma que cualquiera pueda importar y usar en su
+                  aplicación.
+                </p>
+                <h2>
+                  ¿Cuando debemos o podemos utilizar los estados?
+                </h2>
+                <p>
+                  Los podemos utilizar cada vez que necesitemos modicar de forma dinamica el
+                  <a class="link-style" href="https://developer.mozilla.org/es/docs/Glossary/DOM"> DOM</a>
+                </p>
+                <p>
+                  los podemos utilizar para guardar toda clase de informacion como:
+                <ul>
+                  <li>
+                    <a class="link-style"
+                      href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Variables"> Variables</a>
+                  </li>
+                  <li>
+                    <a class="link-style"
+                      href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/const">
+                      Constantes</a>
+                  </li>
+                  <li>
+                    <a class="link-style"
+                      href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects">
+                      Objetos</a>
+                  </li>
+                  <li>
+                    <a class="link-style"
+                      href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array">
+                      Arrays</a>
+                  </li>
+                  <li>
+                    <a class="link-style" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Functions">
+                      Funciones</a>
+                  </li>
+                </ul>
+                </p>
+                <p>
+                  los podemos utilizar cada vez que necesitemos transmitir informacion entre componentes, se puede decir
+                  que se establece un canal de comunicacion bidirecional todo depende de lo que se pretenda realizar.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading42">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse44" aria-expanded="false" aria-controls="collapse44">
+                Estado del componente.
+              </button>
+            </h2>
+            <div id="collapse44" class="accordion-collapse collapse" aria-labelledby="heading42"
+              data-bs-parent="#accordionToggle">
+              <div class="accordion-body">
+                <h2>
+                  ¿Qué hace setState?
+                </h2>
+                <p>
+                  setState() programa una actualización al objeto estado de un componente. Cuando el estado cambia, el
+                  componente responde volviendo a renderizar.
+                </p>
+                <h2>
+                  ¿Cuál es la diferencia entre state y props?
+                </h2>
+                <p>
+                  props (abreviatura de ”properties”) y state son objetos planos de JavaScript. Mientras ambos contienen
+                  información que influye en el resultado del render, son diferentes debido a una importante razón:
+                  props se pasa al componente (similar a los parámetros de una función) mientras que state se administra
+                  dentro del componente (similar a las variables declaradas dentro de una función).
+                </p>
+                <h3>
+                  ¿Por qué setState me está dando el valor incorrecto?
+                </h3>
+                <p>
+                  Las llamadas a setState son asíncronas; no te fíes de que this.state refleje el nuevo valor
+                  inmediatamente después de llamar a setState. Pasa una función de actualización en lugar de un objeto
+                  si necesitas calcular valores en función del estado actual (revisa a continuación para más detalles).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading44a">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse44a" aria-expanded="false" aria-controls="collapse44a">
+                React - Hooks.
+              </button>
+            </h2>
+            <div id="collapse44a" class="accordion-collapse collapse" aria-labelledby="heading4"
+              data-bs-parent="#accordionToggle">
+              <div class="accordion-body">
+                <p>
+                  Hooks son una nueva característica en React 16.8. Estos te permiten usar el estado y otras
+                  características de React sin escribir una clase.
+                </p>
+                <img class="img-fluid w-50 rounded-3" src="./img/sesion-4/img-01.png" alt="componente funcional">
+                <br>
+                <p>
+                  Esta nueva función useState es el primer “Hook” que vamos a aprender, pero este ejemplo es solo una
+                  introducción. ¡No te preocupes si aún no tiene sentido!.
+                </p>
+                <p>
+                  El único argumento para useState es el estado inicial. En el ejemplo anterior, es 0 porque nuestro
+                  contador comienza desde cero. Ten en cuenta que a diferencia de this.state, el estado aquí no tiene
+                  que ser un objeto — aunque puede serlo si quisieras. El argumento de estado inicial solo se usa
+                  durante el primer renderizado.
+                </p>
+                <h3>
+                  Declarando múltiples variables de estado.
+                </h3>
+                <p>
+                  Puedes usar el Hook de estado más de una vez en un mismo componente:
+                </p>
+                <img class="img-fluid w-50 rounded-3" src="./img/sesion-4/img-02.png" alt="componente funcional">
+                <br>
+                <p>
+                  La sintaxis de
+                  <a class="link-style"
+                    href="https://developer.mozilla.org/es/docs/web/javascript/reference/operators/destructuring_assignment">
+                    desestructuración</a>
+                  de un array nos permite dar diferentes nombres a las variables de
+                  estado que declaramos llamando a useState. Estos nombres no forman parte de la API useState. En su
+                  lugar, React asume que si llamas a useState muchas veces, lo haces en el mismo orden durante cada
+                  renderizado. Volveremos a explicar por qué esto funciona y cuándo será útil más adelante.
+
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading44b">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse44b" aria-expanded="false" aria-controls="collapse44b">
+                ¿Pero qué es un Hook?
+              </button>
+            </h2>
+            <div id="collapse44b" class="accordion-collapse collapse" aria-labelledby="heading44b"
+              data-bs-parent="#accordionToggle">
+              <div class="accordion-body">
+                <p>
+                  Los Hooks son funciones que te permiten “enganchar” el estado de React y el ciclo de vida desde
+                  componentes de función. Los hooks no funcionan dentro de las clases — te permiten usar React sin
+                  clases. (No recomendamos reescribir tus componentes existentes de la noche a la mañana, pero puedes
+                  comenzar a usar Hooks en los nuevos si quieres).
+                </p>
+                <p>
+                  React proporciona algunos Hooks incorporados como useState. También puedes crear tus propios Hooks
+                  para reutilizar el comportamiento con estado entre diferentes componentes. Primero veremos los Hooks
+                  incorporados.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <!-- <h6>Ejercicios propuestos.</h6> -->
+            <!-- <ul>
+              <li>
+                Crear un formulario que permita el ingreso de 3 numeros para realizar la suma de los 3, validando que
+                solo se puedan sumar numeros positivos y mostrandole el resultado al usuario.
+                <a class="link-style" href="https://github.com/enyoitech/sesion-24-ejercicio-1" target="_blank"
+                  rel="solucion">Solucion.</a>
+              </li>
+              <li>
+                Crear un formulario que permita el ingreso de 3 numeros diferentes y los ordene en orden de mayor a
+                menor, mostrandole el resultado al usuario.
+                <a class="link-style" href="https://github.com/enyoitech/sesion-24-ejercicio-2" target="_blank"
+                  rel="Solucion">Solucion.</a>
+              </li>
+              <li>
+                Crear un formulario que permita el ingreso de un E-mail, un numero celular y los enmascare. Ejemplo
+                pe*******@gmail.com / 31*********16
+                <a class="link-style" href="https://github.com/enyoitech/-sesion-24-ejercicio-3" target="_blank"
+                  rel="solucion">Solucion.</a>
+              </li>
+            </ul> -->
+          </div>
+      </section>
+
+    </div>
+    <!-- fin sesion -4  -->
   </div>
 </body>
 
