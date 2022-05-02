@@ -939,7 +939,7 @@
     <!--inicio sesion -5  -->
     <div class="col-12 mt-5">
       <section class="my-2">
-        <h5>Sesion Nº-04</h5>
+        <h5>Sesion Nº-05</h5>
         <h6>Objeivos</h6>
         <ul>
           <li>Introduccion al manejo de Verificación de tipos con
@@ -949,12 +949,7 @@
             </a>
             del componente
           </li>
-          <li>Introduccion a
-            <a class="link-style" href="https://es.reactjs.org/docs/hooks-intro.html" target="_blank"
-              rel="Ampliar-informacion">
-              React-Hooks
-            </a>
-          </li>
+          
         </ul>
         <h3>Documentacion Recomendada</h3>
         <ul>
@@ -1048,116 +1043,7 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading42">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse44" aria-expanded="false" aria-controls="collapse44">
-                Estado del componente.
-              </button>
-            </h2>
-            <div id="collapse44" class="accordion-collapse collapse" aria-labelledby="heading42"
-              data-bs-parent="#accordionToggle">
-              <div class="accordion-body">
-                <h2>
-                  ¿Qué hace setState?
-                </h2>
-                <p>
-                  setState() programa una actualización al objeto estado de un componente. Cuando el estado cambia, el
-                  componente responde volviendo a renderizar.
-                </p>
-                <h2>
-                  ¿Cuál es la diferencia entre state y props?
-                </h2>
-                <p>
-                  props (abreviatura de ”properties”) y state son objetos planos de JavaScript. Mientras ambos contienen
-                  información que influye en el resultado del render, son diferentes debido a una importante razón:
-                  props se pasa al componente (similar a los parámetros de una función) mientras que state se administra
-                  dentro del componente (similar a las variables declaradas dentro de una función).
-                </p>
-                <h3>
-                  ¿Por qué setState me está dando el valor incorrecto?
-                </h3>
-                <p>
-                  Las llamadas a setState son asíncronas; no te fíes de que this.state refleje el nuevo valor
-                  inmediatamente después de llamar a setState. Pasa una función de actualización en lugar de un objeto
-                  si necesitas calcular valores en función del estado actual (revisa a continuación para más detalles).
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading44a">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse44a" aria-expanded="false" aria-controls="collapse44a">
-                React - Hooks.
-              </button>
-            </h2>
-            <div id="collapse44a" class="accordion-collapse collapse" aria-labelledby="heading4"
-              data-bs-parent="#accordionToggle">
-              <div class="accordion-body">
-                <p>
-                  Hooks son una nueva característica en React 16.8. Estos te permiten usar el estado y otras
-                  características de React sin escribir una clase.
-                </p>
-                <img class="img-fluid w-50 rounded-3" src="./img/sesion-4/img-01.png" alt="componente funcional">
-                <br>
-                <p>
-                  Esta nueva función useState es el primer “Hook” que vamos a aprender, pero este ejemplo es solo una
-                  introducción. ¡No te preocupes si aún no tiene sentido!.
-                </p>
-                <p>
-                  El único argumento para useState es el estado inicial. En el ejemplo anterior, es 0 porque nuestro
-                  contador comienza desde cero. Ten en cuenta que a diferencia de this.state, el estado aquí no tiene
-                  que ser un objeto — aunque puede serlo si quisieras. El argumento de estado inicial solo se usa
-                  durante el primer renderizado.
-                </p>
-                <h3>
-                  Declarando múltiples variables de estado.
-                </h3>
-                <p>
-                  Puedes usar el Hook de estado más de una vez en un mismo componente:
-                </p>
-                <img class="img-fluid w-50 rounded-3" src="./img/sesion-4/img-02.png" alt="componente funcional">
-                <br>
-                <p>
-                  La sintaxis de
-                  <a class="link-style"
-                    href="https://developer.mozilla.org/es/docs/web/javascript/reference/operators/destructuring_assignment">
-                    desestructuración</a>
-                  de un array nos permite dar diferentes nombres a las variables de
-                  estado que declaramos llamando a useState. Estos nombres no forman parte de la API useState. En su
-                  lugar, React asume que si llamas a useState muchas veces, lo haces en el mismo orden durante cada
-                  renderizado. Volveremos a explicar por qué esto funciona y cuándo será útil más adelante.
-
-
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading44b">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse44b" aria-expanded="false" aria-controls="collapse44b">
-                ¿Pero qué es un Hook?
-              </button>
-            </h2>
-            <div id="collapse44b" class="accordion-collapse collapse" aria-labelledby="heading44b"
-              data-bs-parent="#accordionToggle">
-              <div class="accordion-body">
-                <p>
-                  Los Hooks son funciones que te permiten “enganchar” el estado de React y el ciclo de vida desde
-                  componentes de función. Los hooks no funcionan dentro de las clases — te permiten usar React sin
-                  clases. (No recomendamos reescribir tus componentes existentes de la noche a la mañana, pero puedes
-                  comenzar a usar Hooks en los nuevos si quieres).
-                </p>
-                <p>
-                  React proporciona algunos Hooks incorporados como useState. También puedes crear tus propios Hooks
-                  para reutilizar el comportamiento con estado entre diferentes componentes. Primero veremos los Hooks
-                  incorporados.
-                </p>
-              </div>
-            </div>
-          </div>
+         
           <div>
             <!-- <h6>Ejercicios propuestos.</h6> -->
             <!-- <ul>
