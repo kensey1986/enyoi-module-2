@@ -571,16 +571,16 @@
           <h3>Documentacion Recomendada</h3>
           <ul>
             <li>
-              <a class="link-style" href="https://es.reactjs.org/docs/react-dom.html" target="_blank"
-                rel="noopener noreferrer">ReactDOM</a>
+              <a class="link-style" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank"
+                rel="noopener noreferrer">Arrays</a>
             </li>
             <li>
-              <a class="link-style" href="https://es.reactjs.org/docs/react-dom-client.html" target="_blank"
-                rel="noopener noreferrer">ReactDOM-Client</a>
+              <a class="link-style" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects" target="_blank"
+                rel="noopener noreferrer">Objetos</a>
             </li>
             <li>
-              <a class="link-style" href="https://es.reactjs.org/docs/rendering-elements.html" target="_blank"
-                rel="noopener noreferrer">Renderizando elementos</a>
+              <a class="link-style" href="https://blog.webtraining.zone/diferencia-entre-parametros-y-argumentos-en-javascript/" target="_blank"
+                rel="noopener noreferrer">Diferencia entre parámetros y argumentos</a>
             </li>
             <li>
               <a class="link-style" href="https://es.reactjs.org/docs/render-props.html" target="_blank"
@@ -1196,6 +1196,147 @@
 
     </div>
     <!-- fin sesion -6  -->
+     <!--inicio sesion -7  -->
+     <div class="col-12 mt-5">
+      <section class="my-2">
+        <h5>Sesion Nº-07</h5>
+        <h6>Objeivos</h6>
+        <ul>
+          <li>Introduccion al uso
+            <a class="link-style" href="https://es.reactjs.org/docs/forms.html" target="_blank"
+              rel="Ampliar-informacion">
+              Formularios
+            </a>
+            en React
+          </li>
+        </ul>
+        <h3>Documentacion Recomendada</h3>
+        <ul>
+          <li>
+            <a class="link-style" href="https://es.reactjs.org/docs/forms.html" target="_blank"
+              rel="Ampliar-informacion">
+              Formularios
+            </a>
+            <a class="link-style" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank"
+              rel="Ampliar-informacion">
+              Funcion Arrow (funcion anonima)
+            </a>
+            <a class="link-style" href="https://es.reactjs.org/docs/components-and-props.html" target="_blank"
+            rel="Ampliar-informacion">
+            Componentes-React
+          </a>
+          </li>
+          <li>
+            <a class="link-style" href="https://es.reactjs.org/docs/rendering-elements.html" target="_blank"
+              rel="noopener noreferrer">Renderizando elementos</a>
+          </li>
+
+        </ul>
+        <p class="my-2">
+          Codigo trabajado en
+          <a class="link-style" href="https://github.com/enyoitech/modulo-2-sesion-7" target="_blank"> clase</a>
+        </p>
+        <div class="accordion" id="accordionToggle64">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading64b">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse65"
+                aria-expanded="true" aria-controls="collapseOne">
+                Creando Nuestro primer formulario.
+              </button>
+            </h2>
+            <div id="collapse65" class="accordion-collapse collapse show" aria-labelledby="heading64b"
+              data-bs-parent="#accordionToggle64">
+              <div class="accordion-body">
+                <p>
+                  Crearemos un nuevo proyecto siguiendo las instrucciones descritas en la
+                  <a class="link-style" href="#sesion-01">Sesion Nº 1</a>.
+                </p>
+                <p>
+                  En nuestro arbol de carpetas, en nuestra carpeta <code>src</code> creamos nuestra carpeta <code>Components</code> y 
+                  en su interior crearemos una carpeta llamda <code>Forms</code>, dentro de esta crearemos un archivo llamado <code>Form.jsx</code>, luego 
+                  en este archivo crearemos la estructura basica de nuestro componente funcional (
+                    <a class="link-style" href="https://es.reactjs.org/docs/components-and-props.html" target="_blank"
+                    rel="noopener noreferrer">Functional component react</a> 
+                  ).
+                </p>
+                <p>
+                  En el retorno (
+                  <a class="link-style" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/return" target="_blank"
+                    rel="noopener noreferrer">return</a>) de nuestra funcion vamos a devolver un titulo (h1) con la frase 
+                    (
+                  <a class="link-style" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"
+                    rel="noopener noreferrer">Cadena de texto -string</a>)
+                    <code>Aqui construire un formulario</code>
+                </p>
+                <br>
+                <img class="img-fluid w-75 rounded-3 border-2" src="./img/sesion-7/img-01.png" alt="">
+                <br>
+               <p>
+                 Ahora vamos a nuestro archivo <code>App.jsx</code> y procederemos a borrar todo el contenido que retorna el cual se auto genero al crear la aplicacion,
+                 y tambien retiramos los imports que no vamos a utilizar, quedando de la siguiente forma:
+               </p>
+               <br>
+               <img class="img-fluid w-75 rounded-3 border-2" src="./img/sesion-7/img-02.png" alt="">
+               <br>
+                <p>
+                  Ahora procedemos a realizar la importacion de nuestro componente <code>Form.jsx</code> y realizar su respectivo llamado.
+                </p>  
+                <br>
+               <img class="img-fluid w-75 rounded-3 border-2" src="./img/sesion-7/img-03.png" alt="">
+               <br>
+                <p>
+                  Procedemos a levantar nuestra aplicacion, abriendo la consola que nos ofrece <strong>VS-CODE</strong>
+                </p>
+                <br>
+                <img class="img-fluid w-75 rounded-3 border-2" src="./img/sesion-7/img-04.png" alt="">
+                <br>
+                <p>digitando la siguiente instruccion <code>npm run dev</code></p> y presionar la tecla <code>Enter</code>
+                <br>
+                <img class="img-fluid w-75 rounded-3 border-2" src="./img/sesion-7/img-05.png" alt="">
+                <br>
+                <p>La consola nos indicara que nuestra aplicacion esta corriendo en la siguiente url: <code> http://localhost:3000</code></p>
+                <br>
+                <img class="img-fluid w-75 rounded-3 border-2" src="./img/sesion-7/img-06.png" alt="">
+                <br>
+                <p>
+                  Al abrir la mencionada url en nuestro explorador web debemos poder ver nuestra aplicacion-web con la siguiente informacion:
+                </p>
+                <br>
+                <img class="img-fluid w-75 rounded-3 border-2" src="./img/sesion-7/img-07.png" alt="">
+                <br>
+                <br>
+                  <h2>Trabajando en Nuestro Componente <code>Form.jsx</code></h2>
+            </div>
+            </div>
+          </div>
+
+          <div>
+            <!-- <h6>Ejercicios propuestos.</h6> -->
+            <!-- <ul>
+              <li>
+                Crear un formulario que permita el ingreso de 3 numeros para realizar la suma de los 3, validando que
+                solo se puedan sumar numeros positivos y mostrandole el resultado al usuario.
+                <a class="link-style" href="https://github.com/enyoitech/sesion-24-ejercicio-1" target="_blank"
+                  rel="solucion">Solucion.</a>
+              </li>
+              <li>
+                Crear un formulario que permita el ingreso de 3 numeros diferentes y los ordene en orden de mayor a
+                menor, mostrandole el resultado al usuario.
+                <a class="link-style" href="https://github.com/enyoitech/sesion-24-ejercicio-2" target="_blank"
+                  rel="Solucion">Solucion.</a>
+              </li>
+              <li>
+                Crear un formulario que permita el ingreso de un E-mail, un numero celular y los enmascare. Ejemplo
+                pe*******@gmail.com / 31*********16
+                <a class="link-style" href="https://github.com/enyoitech/-sesion-24-ejercicio-3" target="_blank"
+                  rel="solucion">Solucion.</a>
+              </li>
+            </ul> -->
+          </div>
+      </section>
+
+    </div>
+    <!-- fin sesion -7  -->
   </div>
 </body>
 
