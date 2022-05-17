@@ -1209,6 +1209,7 @@
             </a>
             en React
           </li>
+          
         </ul>
         <h3>Documentacion Recomendada</h3>
         <ul>
@@ -1217,13 +1218,22 @@
               rel="Ampliar-informacion">
               Formularios
             </a>
+          </li>
+          <li>
             <a class="link-style" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank"
               rel="Ampliar-informacion">
               Funcion Arrow (funcion anonima)
             </a>
+          </li>
+          <li>
             <a class="link-style" href="https://es.reactjs.org/docs/components-and-props.html" target="_blank"
             rel="Ampliar-informacion">
             Componentes-React
+          </a>
+          <li>
+            <a class="link-style" href="https://carontestudio.com/blog/atributos-html/" target="_blank"
+            rel="Ampliar-informacion">
+            atributos-html5
           </a>
           </li>
           <li>
@@ -1306,6 +1316,57 @@
                 <br>
                 <br>
                   <h2>Trabajando en Nuestro Componente <code>Form.jsx</code></h2>
+                  <br>
+                  <p>Procederemos a construir la estructura de un formulario basico tal cual lo 
+                    cosntruiriamos normalmente, constara de una etiqueta <code>form</code>, 2 etiquetas
+                    <code>label</code>, 2 etiquetas <code>input</code>, una etiqueta <code>button</code>.
+                  </p>
+                  <br>
+                  <img class="img-fluid w-75 rounded-3 border-2" src="./img/sesion-7/img-08.png" alt="">
+                  <br>
+                  <p>
+                    Como podemos observar cada input tiene definido su <code>type</code>, podemos deducir
+                    que estamos construyendo un formulario sencillo para un login.
+                  </p>
+                  <p>
+                    Ahora agregaremos el atributo <code>name</code> a los input y asignar sus respectivos nombres
+                    para indentifica cada input (recuerda que puedes asignar el nombre de tu preferencia para cada input).
+                  </p>
+                  <p>
+                    Tambien asignamos valor al atributo
+                    <a class="link-style" href="https://www.geeksforgeeks.org/reactjs-htmlfor-attribute/" target="_blank"
+                    rel="noopener noreferrer">htmlFor</a> que es equivalente al atributo
+                    <a class="link-style" href="https://developer.mozilla.org/es/docs/Web/HTML/Element/label" target="_blank"
+                    rel="noopener noreferrer">
+                    for
+                  </a> y recordemos que este atributo se utiliza para enlacer nuestra etiqueta <code>label</code> con su 
+                  respectivo <code>input</code>, por convension asignamos el mismo del <code>input</code>.
+                  </p>
+                  <br>
+                  <img class="img-fluid w-75 rounded-3 border-2" src="./img/sesion-7/img-09.png" alt="">
+                  <br>
+                  <br>
+                  <p>Procedemos a crear un <code>Hook</code> el cual contendra en el estado un 
+                    <a class="link-style" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects" target="_blank"
+                    rel="noopener noreferrer">
+                    objeto
+                  </a> con los atributos: <strong> usuario </strong> y <strong> password </strong>, inicialmente vacios.
+                  </p>
+                  <img class="img-fluid w-75 rounded-3 border-2" src="./img/sesion-7/img-10.png" alt="">
+                  <br>
+                  <br>
+                  <p>Ahora procederemos a crear el metodo que se encargara de actualizar mi estado (en este caso actualizar el objeto 
+                    guardado en data)
+                  </p>
+                  <p>sencillamente creamos una constante a la cual llamaremos <code>capturarData</code>
+                  la cual sera igual o guardara una funcion Arrow o tambien llamda funcion anonima, la cual es la encargada
+                  de recibir el evento que se ejecute en el formulario.
+                  </p>
+                  <p>
+                    una vez recibe este evento ejecutarada el metodo <code>setData()</code> el cual cambiara se encargara 
+                    de actualizar el objeto guardado en el estado (data).
+                  </p>
+                  
             </div>
             </div>
           </div>
