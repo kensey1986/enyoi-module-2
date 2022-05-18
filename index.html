@@ -1240,6 +1240,12 @@
             <a class="link-style" href="https://es.reactjs.org/docs/rendering-elements.html" target="_blank"
               rel="noopener noreferrer">Renderizando elementos</a>
           </li>
+          <li>
+            <a class="link-style" href="https://es.reactjs.org/docs/handling-events.html" target="_blank"
+            rel="Ampliar-informacion">
+            Eventos en React
+          </a>
+          </li>
 
         </ul>
         <p class="my-2">
@@ -1359,14 +1365,39 @@
                     guardado en data)
                   </p>
                   <p>sencillamente creamos una constante a la cual llamaremos <code>capturarData</code>
-                  la cual sera igual o guardara una funcion Arrow o tambien llamda funcion anonima, la cual es la encargada
+                  la cual sera igual o guardara una funcion Arrow o tambien llamada funcion anonima, la cual es la encargada
                   de recibir el evento que se ejecute en el formulario.
                   </p>
                   <p>
-                    una vez recibe este evento ejecutarada el metodo <code>setData()</code> el cual cambiara se encargara 
+                    una vez recibe este evento ejecutara el metodo <code>setData()</code> el cual se encargara 
                     de actualizar el objeto guardado en el estado (data).
                   </p>
-                  
+                  <img class="img-fluid w-50 rounded-3 border-2" src="./img/sesion-7/img-11.png" alt="">
+                  <br>
+                  <br>
+                  <p>Ahora debemos asociar nuestro metodo de captura de datos con los inputs de los cuales queremos capturar los datos.
+                    que vayan siendo digitados por el usuario.
+                  </p>
+                  <p>
+                    utilizaremos el evento <code>onChange={ }</code>, el cual 
+                    se encargara de ejecutar nuestro metodo <code>capturarData</code> y este actualizara el objeto que se encuentra en nuestro estado (data).
+                  </p>
+                  <img class="img-fluid w-50 rounded-3 border-2" src="./img/sesion-7/img-12.png" alt="">
+                  <br>
+                  <br>
+                  <p>Procedemos a crear un metodo para simular un login, si los datos ingresados por el usuario coinciden con los datos
+                    que "hard-codeamos" mostrar una alerta informando que el login fue exitoso en caso de no coincidir mostrar que no lo fue.
+                  </p>
+                  <img class="img-fluid w-50 rounded-3 border-2" src="./img/sesion-7/img-13.png" alt="">
+                  <br>
+                  <br>
+                  <p>
+                    ahora debemos conectar nuestro metodo <code>login</code> con nuestro boton <strong>Login</strong>, para lo cual usaremos
+                    el evento <code>onClick={}</code> el cual al dar click sobre el boton ejecutara el metodo <code>login</code>
+                  </p>
+                  <img class="img-fluid w-50 rounded-3 border-2" src="./img/sesion-7/img-14.png" alt="">
+                  <br>
+                  <br>
             </div>
             </div>
           </div>
